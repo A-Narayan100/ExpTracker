@@ -11,7 +11,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@AllArgsConstructor
 @NoArgsConstructor
 @Data
 @Table(name="EXPENCE_TBL")
@@ -31,12 +30,7 @@ public class Expense {
 
     private String currency;
 
-    //@ManyToOne
-    //private Category category;
 
-  //  @JsonIgnore
-   // @ManyToOne
-    //private Client client;
 
 
 }

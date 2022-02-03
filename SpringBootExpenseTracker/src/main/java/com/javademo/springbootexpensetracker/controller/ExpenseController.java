@@ -31,7 +31,7 @@ public class ExpenseController {
         return expenseRepository.findAll();
     }
 
-    //category/2
+
     @GetMapping("/expense/{id}")
     ResponseEntity<?> getExpense (@PathVariable Long id){
         Optional<Expense> expense = expenseRepository.findById(id);

@@ -31,7 +31,7 @@ public class ClientController {
         return clientRepository.findAll();
     }
 
-    //category/2
+
     @GetMapping("/client/{id}")
     ResponseEntity<?> getClient (@PathVariable Long id){
         Optional<Client> client = clientRepository.findById(id);
